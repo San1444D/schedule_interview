@@ -4,6 +4,10 @@
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
 # User-specific files
+.venv
+.env
+__pycache__
+.ideas
 *.rsuser
 *.suo
 *.user
@@ -380,7 +384,7 @@ FodyWeavers.xsd
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
-!.vscode/launch.json
+# !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
 

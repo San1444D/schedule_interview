@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.Wrap-container {
+  margin: 10px;
+  padding: 10px;
+}
+
+.input-fields {
+  margin: 1rem;
+  width: 30%;
+}
+.choose-template {
+  width: 100%;
+}
+
+.show-template-form {
+  margin: 1rem;
+}
+
+.interview-schedule-levels {
+  margin: 1rem;
+  padding: 2%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: grey;
+  border-radius: 8px;
+}
+.interview-schedule-level {
+  margin: 1rem;
+  padding: 2%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: grey;
+  border-radius: 8px;
+}
+.wrap {
+  width: 95%;
+  /* border: 2px solid gray; */
+  max-width: 500px;
+  border-radius: 10px;
+  background: linear-gradient(358deg, rgba(255, 255, 255, 0.17) 0%, rgba(153, 153, 153, 0.07) 100%);
+
+  overflow: hidden;
+  border: 2px rgba(255, 255, 255, 0.48) solid;
+
+  margin: auto;
+  margin-top: 10%;
+  padding: 60px;
+}
+
+.level-panel-members {
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+}
