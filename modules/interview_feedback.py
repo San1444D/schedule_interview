@@ -1,6 +1,6 @@
 import requests, logging, config
 from modules.auth import login_required
-from flask import Blueprint, redirect, render_template, request, session
+from flask import Blueprint, redirect, render_template, request, session,jsonify
 
 api_header = config.api_header
 base_api_url = config.api_url
@@ -50,7 +50,7 @@ def update_feedback():
     try:
         token = {**api_header, "Authorization": session["token"]}
         send_data = request.get_json()
-        result = requests.post(
+        result = requests.put(
             url=f"{base_api_url}/Interview-Schedule-Panel-Feedback/Update-Schedule-Interview-Feedback",
             json=send_data,
             headers=token,
@@ -58,6 +58,7 @@ def update_feedback():
         if result.status_code == 200:
             return result.json(), 200
         return result.json(), 400
+        # return jsonify(send_data), 200
     except Exception as e:
         logging.exception(e)
         return {"ErrorCode": 9998, "Message": "web server error"}, 500
